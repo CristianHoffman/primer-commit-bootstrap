@@ -1,0 +1,41 @@
+* {
+    font-family: 'Crete Round', serif;
+    color: white;
+}
+body {
+    background-image: url(imagenes/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-mio {
+    background-image: radial-gradient(red , black);
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+.ubicacion {
+    display: flex;
+    justify-content: center;
+  padding: 40px;
+}
+section {
+width: 700px;
+}
+
+p{
+    margin: 10px;
+    padding: 10px;
+}
+
+.imagenn {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    
+
+}
+  
