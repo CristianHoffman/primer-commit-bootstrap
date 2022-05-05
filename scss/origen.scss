@@ -6,7 +6,6 @@
 //import
 @import "galeria" ;
 
-
 body {
     background-image: url(../imagenes/fondo.jpg);
     background-repeat: no-repeat;
@@ -26,6 +25,7 @@ h2 {
 .ubicacion {
     @extend h2; 
     padding: 40px;
+
 }
 section {
 width: 700px;
@@ -65,4 +65,35 @@ p{
     color: red;
     margin: 16px 0;
  }
+
+ .color-formulario {
+     color: black;
+
+ }
+
+ .nuestros {
+    
+    padding: 20px;
+     margin: 150px;
+ }
+
+ @media (max-width: 991.98px) { 
+    .nuestros {
+       margin: 10px;
+       
+    }
+     
+        
+    
+ }
+
+
+
+
+
+
+ 
+
+
+
 

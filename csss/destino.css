@@ -74,4 +74,19 @@ p {
   margin: 16px 0;
 }
 
+.color-formulario {
+  color: black;
+}
+
+.nuestros {
+  padding: 20px;
+  margin: 150px;
+}
+
+@media (max-width: 991.98px) {
+  .nuestros {
+    margin: 10px;
+  }
+}
+
 /*# sourceMappingURL=destino.css.map */
