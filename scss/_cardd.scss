@@ -1,0 +1,81 @@
+.card-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 50vh;
+  
+}
+
+.cardd {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+    .face {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .5s;
+        .front {
+            transform: perspective(600px) rotateY(0deg);
+           
+        }
+    }
+    
+}
+
+.back {
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3, 35, 54);
+    padding: 15px;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+
+
+
+
+.cardd .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cardd .front h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    background: rgb(3, 35, 54);
+    text-align: center;
+}
+
+.cardd .back h3 {
+    font-size: 25px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+
+}
+.cardd .back p {
+    letter-spacing: 1px;
+}
+
+.cardd:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.cardd:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
+

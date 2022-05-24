@@ -17,13 +17,148 @@
   border: 5px solid black;
 }
 
+.h2-reserva {
+  position: absolute;
+  left: 23%;
+  top: 1150px;
+  margin-left: 40%;
+}
+
+.p-reserva {
+  position: absolute;
+  top: 1250px;
+  margin-left: 58%;
+}
+
+.button {
+  position: absolute;
+  margin-left: 65%;
+  top: 1400px;
+  height: 50px;
+  width: 200px;
+}
+
+.divslider {
+  background-color: #fff;
+  height: 510px;
+  padding-top: 0%;
+}
+
+.position {
+  position: absolute;
+  top: 1350px;
+  left: 23%;
+  transform: translate(-50%, -50%);
+}
+
+.slider {
+  background-image: url(/imagenes/slider.jpg);
+  background-size: cover;
+  height: 340px;
+  width: 600px;
+  border-radius: 10px;
+  animation: animate 10s infinite;
+}
+
+@keyframes animate {
+  25% {
+    background-image: url(/imagenes/slider4.jpg);
+    background-size: cover;
+  }
+  50% {
+    background-image: url(/imagenes/slider3.jpg);
+    background-size: cover;
+  }
+  75% {
+    background-image: url(/imagenes/slider2.jpg);
+    background-size: cover;
+  }
+  100% {
+    background-image: url(/imagenes/slider.jpg);
+    background-size: cover;
+  }
+}
+.card-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-height: 50vh;
+}
+
+.cardd {
+  position: relative;
+  width: 300px;
+  height: 350px;
+  margin: 20px;
+}
+.cardd .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.cardd .face .front {
+  transform: perspective(600px) rotateY(0deg);
+}
+
+.back {
+  transform: perspective(600px) rotateY(180deg);
+  background: rgb(3, 35, 54);
+  padding: 15px;
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.cardd .front img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cardd .front h3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  color: white;
+  background: rgb(3, 35, 54);
+  text-align: center;
+}
+
+.cardd .back h3 {
+  font-size: 25px;
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+
+.cardd .back p {
+  letter-spacing: 1px;
+}
+
+.cardd:hover .front {
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.cardd:hover .back {
+  transform: perspective(600px) rotateY(360deg);
+}
+
 body {
   background-image: url(../imagenes/fondo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 body .bg-mio {
-  background-image: radial-gradient(red, black);
+  background: linear-gradient(to top, #200122, #6f0000);
 }
 
 h2, .ubicacion {
@@ -83,9 +218,114 @@ p {
   margin: 150px;
 }
 
-@media (max-width: 991.98px) {
-  .nuestros {
-    margin: 10px;
+h5 {
+  background: linear-gradient(to top, #23074d, #cc5333);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.diviconos {
+  background: linear-gradient(to right, #ffefba, #ffffff);
+  height: 320px;
+}
+.diviconos .padding-icono {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.padding-form {
+  padding: 100px;
+}
+
+.acordioncolor1 {
+  background-color: #006DFF;
+}
+
+.acordioncolor2 {
+  background-color: #6B9DFF;
+}
+
+.acordioncolor3 {
+  background: linear-gradient(to right, #ffefba, #ffffff);
+}
+
+@media (max-width: 992px) {
+  .slider {
+    margin-left: 60px;
+    height: 300px;
+    width: 500px;
+  }
+}
+@media (max-width: 767px) {
+  .diviconos {
+    height: 600px;
+  }
+
+  .padding-icono {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .divslider {
+    height: 500px;
+    padding-top: 0%;
+  }
+
+  .h2-reserva {
+    left: 0px;
+    top: 150%;
+    margin-left: 40%;
+  }
+
+  .p-reserva {
+    top: 160%;
+    margin-left: 210px;
+  }
+
+  .button {
+    margin-left: 41%;
+    top: 170%;
+    height: 50px;
+    width: 200px;
+  }
+
+  .slider {
+    height: 200px;
+    width: 400px;
+  }
+
+  .position {
+    top: 190%;
+    left: 45%;
+  }
+}
+@media (max-width: 576px) {
+  .slider {
+    height: 245px;
+    width: 300px;
+  }
+
+  .position {
+    top: 1740px;
+    left: 125px;
+  }
+
+  .h2-reserva {
+    left: -60px;
+    top: 1350px;
+    margin-left: 40%;
+  }
+
+  .p-reserva {
+    top: 1420px;
+    margin-left: 50px;
+  }
+
+  .button {
+    margin-left: 135px;
+    top: 1550px;
+    height: 42px;
+    width: 193px;
   }
 }
 

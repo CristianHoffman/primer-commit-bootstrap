@@ -5,18 +5,23 @@
 
 //import
 @import "galeria" ;
+@import "slider";
+@import "cardd";
+
 
 body {
     background-image: url(../imagenes/fondo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     .bg-mio {
-        background-image: radial-gradient(red , black);
+       // background-image: radial-gradient(red , black);
+       background: linear-gradient(to top, #200122, #6f0000);
         
     }
 }
 
 // extend
+
 h2 {
     display: flex;
     justify-content: center;
@@ -77,15 +82,127 @@ p{
      margin: 150px;
  }
 
- @media (max-width: 991.98px) { 
-    .nuestros {
-       margin: 10px;
-       
+ h5 {
+    background: linear-gradient(to top, #23074d, #cc5333);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.diviconos{
+    background: linear-gradient(to right, #ffefba, #ffffff);
+    height: 320px;
+    .padding-icono {
+        padding-top: 30px;
+        padding-bottom: 20px;
     }
-     
+}
+
+.padding-form {
+    padding: 100px;
+}
+
+.acordioncolor1{
+   background-color: #006DFF;
+}
+
+.acordioncolor2 {
+    background-color: #6B9DFF;
+}
+
+.acordioncolor3 {
+    background: linear-gradient(to right, #ffefba, #ffffff);
+}
+
+
+@media (max-width: 992px) {
+    .slider {
         
-    
- }
+        margin-left: 60px;
+        height: 300px;
+        width: 500px;
+       }
+}
+
+
+
+@media (max-width: 767px) { 
+    .diviconos{
+        height: 600px;
+    }
+
+    .padding-icono {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .divslider {
+        height: 500px;
+        padding-top: 0%;
+       }
+    .h2-reserva {
+        left: 0px;
+        top: 150%;
+        margin-left: 40%;
+    }
+    .p-reserva{
+        top: 160%;
+        margin-left: 210px;
+        
+    }
+    .button {
+        
+        margin-left: 41%;
+        top: 170%;
+        height: 50px;
+        width: 200px;
+        
+    }
+
+    .slider {
+        height: 200px;
+        width: 400px;
+       }
+
+
+    .position {
+        top: 190%;
+        left: 45%;
+        
+    }
+ 
+}
+
+@media (max-width: 576px) {
+    .slider {
+        height: 245px;
+        width: 300px;
+       }
+    .position {
+        top: 1740px;
+        left: 125px;
+    }
+    .h2-reserva {
+        left: -60px;
+        top: 1350px;
+        margin-left: 40%;
+    }
+    .p-reserva{
+        top: 1420px;
+        margin-left: 50px;
+    }
+    .button {
+        margin-left: 135px;
+        top: 1550px;
+        height: 42px;
+        width: 193px;
+        
+    }
+
+}
+
+                      
+
+
 
 
 

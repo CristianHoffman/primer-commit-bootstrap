@@ -1,0 +1,72 @@
+.h2-reserva {
+    position: absolute;
+    left: 23%;
+    top: 1150px;
+    margin-left: 40%;
+    
+    
+}
+.p-reserva{
+    position: absolute;
+    top: 1250px;
+    margin-left: 58%;
+    
+}
+
+.button {
+    position: absolute;
+    margin-left: 65%;
+    top: 1400px;
+    height: 50px;
+    width: 200px;
+    
+}
+    
+
+
+.divslider {
+    background-color: #fff;
+    height: 510px;
+    padding-top: 0%;
+   
+}
+
+.position {
+    position: absolute;
+    top: 1350px;
+    left: 23%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.slider {
+    background-image: url(/imagenes/slider.jpg);
+    background-size: cover;
+    height: 340px;
+    width: 600px;
+    border-radius: 10px;
+    animation: animate 10s infinite;
+    
+
+}
+
+@keyframes animate {
+    25% {
+        background-image: url(/imagenes/slider4.jpg);
+        background-size: cover;
+    }
+    50% {
+        background-image: url(/imagenes/slider3.jpg);
+        background-size: cover;
+    }
+    75% {
+        background-image: url(/imagenes/slider2.jpg);
+        background-size: cover;
+    }
+    100% {
+        background-image: url(/imagenes/slider.jpg);
+        background-size: cover;
+    }
+    
+}
